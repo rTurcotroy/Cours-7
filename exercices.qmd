@@ -1,0 +1,18 @@
+---
+title: "cours 7"
+format: html
+editor: visual
+---
+
+## Tache 1 
+
+```{r}
+
+file_list <-list.files(path = ".", pattern = "csv")
+
+dat <- lapply(X = file_list, FUN = read.csv)
+
+df <- do.call(what = rbind, args = dat)
+
+
+```
