@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-## Tache 1 
+## Tâche 1 
 
 ```{r}
 
@@ -14,5 +14,15 @@ dat <- lapply(X = file_list, FUN = read.csv)
 
 df <- do.call(what = rbind, args = dat)
 
+rm(dat)
 
 ```
+
+## Tâche 2 
+
+```{r}
+df <- df[-1]
+
+```
+
+## Tâche 3 
