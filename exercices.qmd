@@ -26,3 +26,36 @@ df <- df[-1]
 ```
 
 ## Tâche 3 
+
+```{r}
+
+espece <- sum(!is.na(df$name))
+
+
+```
+
+## Tâche 4
+
+```{r}
+cas_complets <- complete.cases(df$name)
+df <- df[cas_complets, ]
+```
+
+## Tâche 5 
+
+```{r}
+dim(df)
+#[rangees , colonnes]
+str(df)
+#donne le type et les valeurs possible
+summary(df)
+#fait un sommaire des variable 
+
+missing_a_lot <- df[, c("name", "sleep_cycle")]
+```
+
+## Tâche 6 
+
+```{r}
+
+```
